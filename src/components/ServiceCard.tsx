@@ -16,26 +16,30 @@ const ServiceCard = ({ title, description, icon, link, delay }: ServiceCardProps
 
   return (
     <div 
-      className={`service-card animate-fade-in`}
+      className={`service-card animate-fade-in transform transition-all duration-300 ${isHovered ? 'scale-105 shadow-xl' : ''}`}
       style={{ animationDelay: `${delay}ms` }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="mb-4 text-interior-gold">
-        {icon}
+      <div className={`mb-6 text-center transition-all duration-300 transform ${isHovered ? 'scale-110' : ''}`}>
+        <div className="p-4 inline-flex items-center justify-center rounded-full bg-interior-gold/10 text-interior-gold">
+          {icon}
+        </div>
       </div>
-      <h3 className="text-xl font-serif mb-2">{title}</h3>
-      <p className="text-muted-foreground text-sm mb-4">{description}</p>
-      <Link 
-        to={link} 
-        className="flex items-center text-sm font-medium text-interior-charcoal hover:text-interior-gold transition-colors"
-      >
-        Learn More 
-        <ArrowRight 
-          size={16} 
-          className={`ml-1 transition-transform duration-300 ${isHovered ? 'transform translate-x-1' : ''}`} 
-        />
-      </Link>
+      <h3 className="text-xl font-serif mb-3 text-center">{title}</h3>
+      <p className="text-muted-foreground text-sm mb-5 text-center">{description}</p>
+      <div className="flex justify-center">
+        <Link 
+          to={link} 
+          className="flex items-center text-sm font-medium text-interior-gold hover:text-interior-charcoal transition-colors"
+        >
+          Learn More 
+          <ArrowRight 
+            size={16} 
+            className={`ml-1 transition-transform duration-300 ${isHovered ? 'transform translate-x-1' : ''}`} 
+          />
+        </Link>
+      </div>
     </div>
   );
 };

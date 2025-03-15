@@ -7,6 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,37 +34,48 @@ const Navbar = () => {
     return location.pathname === path;
   };
 
+  const navbarBgClass = scrolled 
+    ? 'bg-white shadow-md py-3' 
+    : isHomePage 
+      ? 'bg-transparent py-5' 
+      : 'bg-white shadow-md py-3';
+
+  const textColorClass = (!scrolled && isHomePage) ? 'text-white' : 'text-interior-charcoal';
+  const activeTextColorClass = (!scrolled && isHomePage) ? 'text-interior-gold' : 'text-interior-gold';
+
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-5'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navbarBgClass}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center">
-            <span className="text-xl font-serif font-semibold tracking-tight text-interior-charcoal">
-              Interior Vista Design
-            </span>
+            <img 
+              src="/lovable-uploads/fce58ace-aa54-4834-bc38-c562e5a894b3.png" 
+              alt="Constro Tech" 
+              className="h-10 md:h-12"
+            />
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            <Link to="/" className={`text-sm font-medium ${isActive('/') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/" className={`text-sm font-medium ${isActive('/') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Home
             </Link>
-            <Link to="/about" className={`text-sm font-medium ${isActive('/about') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/about" className={`text-sm font-medium ${isActive('/about') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               About Us
             </Link>
-            <Link to="/services" className={`text-sm font-medium ${isActive('/services') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/services" className={`text-sm font-medium ${isActive('/services') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Services
             </Link>
-            <Link to="/projects" className={`text-sm font-medium ${isActive('/projects') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/projects" className={`text-sm font-medium ${isActive('/projects') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Projects
             </Link>
-            <Link to="/technology" className={`text-sm font-medium ${isActive('/technology') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/technology" className={`text-sm font-medium ${isActive('/technology') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Technology
             </Link>
-            <Link to="/clientele" className={`text-sm font-medium ${isActive('/clientele') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/clientele" className={`text-sm font-medium ${isActive('/clientele') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Clientele
             </Link>
-            <Link to="/contact" className={`text-sm font-medium ${isActive('/contact') ? 'text-interior-gold' : 'text-interior-charcoal'} hover:text-interior-gold transition-colors`}>
+            <Link to="/contact" className={`text-sm font-medium ${isActive('/contact') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Contact Us
             </Link>
           </div>
@@ -74,7 +86,10 @@ const Navbar = () => {
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="h-6 w-6 text-interior-charcoal" /> : <Menu className="h-6 w-6 text-interior-charcoal" />}
+            {isOpen ? 
+              <X className={`h-6 w-6 ${textColorClass}`} /> : 
+              <Menu className={`h-6 w-6 ${textColorClass}`} />
+            }
           </button>
         </div>
       </div>

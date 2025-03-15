@@ -12,49 +12,50 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section with updated background image */}
       <HeroSection 
         title="Transform Your Space"
         subtitle="Innovative interior design solutions for residential and commercial spaces"
         buttonText="Explore Our Services"
         buttonLink="/services"
-        backgroundImage="https://images.unsplash.com/photo-1494891848038-7bd202a2afeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+        backgroundImage="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053992/homepage_hjfqbx.jpg"
       />
       
       {/* Services Section */}
-      <section className="section bg-gray-50">
+      <section className="section py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">Our Services</h2>
+          <h2 className="section-title text-center mb-2">Our Services</h2>
+          <div className="w-24 h-1 bg-interior-gold mx-auto mb-6"></div>
           <p className="section-subtitle text-center mx-auto">
             We offer comprehensive design and build solutions tailored to your unique requirements
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
             <ServiceCard 
               title="General Contracting" 
               description="Complete project management from concept to completion with attention to every detail."
-              icon={<Hammer size={28} />}
+              icon={<Hammer size={32} />}
               link="/services"
               delay={0}
             />
             <ServiceCard 
               title="Interior Fit-outs" 
               description="Custom interior solutions designed to enhance functionality and aesthetics."
-              icon={<Paintbrush size={28} />}
+              icon={<Paintbrush size={32} />}
               link="/services"
               delay={200}
             />
             <ServiceCard 
               title="Design & Build" 
               description="Integrated approach combining innovative design with quality construction."
-              icon={<Building size={28} />}
+              icon={<Building size={32} />}
               link="/services"
               delay={400}
             />
             <ServiceCard 
               title="Refurbishment" 
               description="Revitalize existing spaces with modern updates and thoughtful renovations."
-              icon={<WandSparkles size={28} />}
+              icon={<WandSparkles size={32} />}
               link="/services"
               delay={600}
             />
@@ -63,7 +64,7 @@ const Index = () => {
       </section>
       
       {/* About Preview Section */}
-      <section className="section">
+      <section className="section py-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
@@ -96,7 +97,7 @@ const Index = () => {
             <div className="order-1 lg:order-2">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742054422/WhatsApp_Image_2025-03-15_at_21.09.50_ddef13b2_t7vbi8.jpg" 
                   alt="Interior Design" 
                   className="rounded-md shadow-lg w-full h-auto object-cover"
                 />
@@ -107,18 +108,19 @@ const Index = () => {
         </div>
       </section>
       
-      {/* Projects Preview */}
-      <section className="section bg-gray-50">
+      {/* Projects Preview with the new images */}
+      <section className="section py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-center">Recent Projects</h2>
+          <h2 className="section-title text-center mb-2">Recent Projects</h2>
+          <div className="w-24 h-1 bg-interior-gold mx-auto mb-6"></div>
           <p className="section-subtitle text-center mx-auto">
             Explore our portfolio of transformative design and build projects
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
             <div className="group relative overflow-hidden rounded-md shadow-md animate-fade-in" style={{ animationDelay: '0ms' }}>
               <img 
-                src="https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053951/WhatsApp_Image_2025-03-15_at_21.21.50_b0f59ecc_iqv0ll.jpg" 
                 alt="Project 1" 
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -129,7 +131,7 @@ const Index = () => {
             </div>
             <div className="group relative overflow-hidden rounded-md shadow-md animate-fade-in" style={{ animationDelay: '200ms' }}>
               <img 
-                src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053918/WhatsApp_Image_2025-03-15_at_21.09.50_05ce81f1_zr6oxq.jpg" 
                 alt="Project 2" 
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -140,7 +142,7 @@ const Index = () => {
             </div>
             <div className="group relative overflow-hidden rounded-md shadow-md animate-fade-in" style={{ animationDelay: '400ms' }}>
               <img 
-                src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053886/WhatsApp_Image_2025-03-15_at_21.09.52_e0d92128_c5h6xf.jpg" 
                 alt="Project 3" 
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />

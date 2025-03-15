@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
       </section>
       
-      {/* Projects Gallery */}
+      {/* Projects Gallery with updated images */}
       <section className="section">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -27,7 +27,7 @@ const Projects = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-md shadow-md mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1551038247-3d9af20df552?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053951/WhatsApp_Image_2025-03-15_at_21.21.50_b0f59ecc_iqv0ll.jpg" 
                   alt="Modern Office Complex" 
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -40,7 +40,7 @@ const Projects = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-md shadow-md mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1493397212122-2b85dda8106b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053918/WhatsApp_Image_2025-03-15_at_21.09.50_05ce81f1_zr6oxq.jpg" 
                   alt="Luxury Residential Villa" 
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -53,7 +53,7 @@ const Projects = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-md shadow-md mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053886/WhatsApp_Image_2025-03-15_at_21.09.52_e0d92128_c5h6xf.jpg" 
                   alt="Boutique Hotel Renovation" 
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -66,7 +66,7 @@ const Projects = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-md shadow-md mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053783/WhatsApp_Image_2025-03-15_at_21.15.02_0cb48a2a_rzdnzz.jpg" 
                   alt="Heritage Building Restoration" 
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -79,7 +79,7 @@ const Projects = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-md shadow-md mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1524230572899-a752b3835840?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053285/WhatsApp_Image_2025-03-15_at_20.29.09_d1568ae0_pbrfve.jpg" 
                   alt="Modern Retail Store" 
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
@@ -92,13 +92,52 @@ const Projects = () => {
             <div className="group">
               <div className="relative overflow-hidden rounded-md shadow-md mb-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1473177104440-ffee2f376098?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053933/WhatsApp_Image_2025-03-15_at_20.30.17_a32473d8_ljxeqm.jpg" 
                   alt="Contemporary Apartment" 
                   className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <h3 className="text-xl font-serif mb-2">Contemporary Apartment</h3>
               <p className="text-muted-foreground text-sm">Residential Design | Chennai</p>
+            </div>
+            
+            {/* Project 7 */}
+            <div className="group">
+              <div className="relative overflow-hidden rounded-md shadow-md mb-4">
+                <img 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742054427/WhatsApp_Image_2025-03-15_at_21.09.50_b601b367_woeso8.jpg" 
+                  alt="Elegant Home Interiors" 
+                  className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <h3 className="text-xl font-serif mb-2">Elegant Home Interiors</h3>
+              <p className="text-muted-foreground text-sm">Residential Design | Pune</p>
+            </div>
+            
+            {/* Project 8 */}
+            <div className="group">
+              <div className="relative overflow-hidden rounded-md shadow-md mb-4">
+                <img 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742054444/WhatsApp_Image_2025-03-15_at_21.09.49_564476d5_gnbqds.jpg" 
+                  alt="Corporate Headquarters" 
+                  className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <h3 className="text-xl font-serif mb-2">Corporate Headquarters</h3>
+              <p className="text-muted-foreground text-sm">Office Design | Bangalore</p>
+            </div>
+            
+            {/* Project 9 */}
+            <div className="group">
+              <div className="relative overflow-hidden rounded-md shadow-md mb-4">
+                <img 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742053877/WhatsApp_Image_2025-03-15_at_21.09.52_e0151764_hlzs2c.jpg" 
+                  alt="Luxury Villa Renovation" 
+                  className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <h3 className="text-xl font-serif mb-2">Luxury Villa Renovation</h3>
+              <p className="text-muted-foreground text-sm">Residential Design | Kerala</p>
             </div>
           </div>
         </div>
