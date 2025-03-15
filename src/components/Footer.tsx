@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About Column */}
           <div className="space-y-4">
-            <h3 className="text-xl font-medium mb-4 text-interior-gold">Interior Vista Design</h3>
+            <h3 className="text-xl font-medium mb-4 text-interior-gold">Constro Tech Solution</h3>
             <p className="text-sm text-gray-300 leading-relaxed">
               We transform spaces into extraordinary experiences with our innovative design solutions and impeccable craftsmanship.
             </p>
@@ -17,7 +17,7 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-interior-gold transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-interior-gold transition-colors">
+              <a href="https://www.instagram.com/constro_tech_solution_official/?igsh=MXg1MHV1aHhxbDJ2aQ%3D%3D#" className="text-gray-400 hover:text-interior-gold transition-colors">
                 <Instagram size={18} />
               </a>
               <a href="#" className="text-gray-400 hover:text-interior-gold transition-colors">
@@ -25,6 +25,9 @@ const Footer = () => {
               </a>
               <a href="#" className="text-gray-400 hover:text-interior-gold transition-colors">
                 <Linkedin size={18} />
+              </a>
+              <a href="https://jsdl.in/RSL-FZZ1742013672" className="text-gray-400 hover:text-interior-gold transition-colors">
+                <img src="/lovable-uploads/fce58ace-aa54-4834-bc38-c562e5a894b3.png" alt="Just Dial" className="h-4 w-auto" />
               </a>
             </div>
           </div>
@@ -37,8 +40,6 @@ const Footer = () => {
               <li><Link to="/about" className="text-gray-300 hover:text-interior-gold transition-colors text-sm">About Us</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-interior-gold transition-colors text-sm">Services</Link></li>
               <li><Link to="/projects" className="text-gray-300 hover:text-interior-gold transition-colors text-sm">Projects</Link></li>
-              <li><Link to="/technology" className="text-gray-300 hover:text-interior-gold transition-colors text-sm">Technology</Link></li>
-              <li><Link to="/clientele" className="text-gray-300 hover:text-interior-gold transition-colors text-sm">Clientele</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-interior-gold transition-colors text-sm">Contact Us</Link></li>
             </ul>
           </div>
@@ -63,7 +64,6 @@ const Footer = () => {
                 <div className="text-sm">
                   <p className="text-gray-300">+91-9740112626</p>
                   <p className="text-gray-300">+91-7975311636</p>
-                  <p className="text-gray-300">+91-8748925647</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-12 pt-8">
           <p className="text-gray-400 text-sm text-center">
-            © {new Date().getFullYear()} Interior Vista Design. All rights reserved.
+            © 2025 Constro Tech Solution. All rights reserved.
           </p>
         </div>
       </div>
