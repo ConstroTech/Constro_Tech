@@ -125,7 +125,7 @@ const Index = () => {
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-serif mb-2">Modern Office Complex</h3>
+                <h3 className="text-white text-xl font-serif mb-2">Commercial Interior</h3>
                 <p className="text-gray-200 text-sm">Corporate Interiors</p>
               </div>
             </div>
@@ -136,7 +136,7 @@ const Index = () => {
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-serif mb-2">Luxury Residential Villa</h3>
+                <h3 className="text-white text-xl font-serif mb-2">Modern Residential Interior</h3>
                 <p className="text-gray-200 text-sm">Residential Design</p>
               </div>
             </div>
@@ -147,8 +147,8 @@ const Index = () => {
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
-                <h3 className="text-white text-xl font-serif mb-2">Boutique Hotel Renovation</h3>
-                <p className="text-gray-200 text-sm">Hospitality Design</p>
+                <h3 className="text-white text-xl font-serif mb-2">Modern Residential Interior</h3>
+                <p className="text-gray-200 text-sm">Residential Design</p>
               </div>
             </div>
           </div>

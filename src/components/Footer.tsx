@@ -27,7 +27,7 @@ const Footer = () => {
                 <Linkedin size={18} />
               </a>
               <a href="https://jsdl.in/RSL-FZZ1742013672" className="text-gray-400 hover:text-interior-gold transition-colors">
-                <img src="/lovable-uploads/fce58ace-aa54-4834-bc38-c562e5a894b3.png" alt="Just Dial" className="h-4 w-auto" />
+                <span>just_dial</span>
               </a>
             </div>
           </div>

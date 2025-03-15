@@ -69,12 +69,6 @@ const Navbar = () => {
             <Link to="/projects" className={`text-sm font-medium ${isActive('/projects') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Projects
             </Link>
-            <Link to="/technology" className={`text-sm font-medium ${isActive('/technology') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
-              Technology
-            </Link>
-            <Link to="/clientele" className={`text-sm font-medium ${isActive('/clientele') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
-              Clientele
-            </Link>
             <Link to="/contact" className={`text-sm font-medium ${isActive('/contact') ? activeTextColorClass : textColorClass} hover:text-interior-gold transition-colors`}>
               Contact Us
             </Link>
@@ -108,12 +102,6 @@ const Navbar = () => {
           </Link>
           <Link to="/projects" className={`text-sm font-medium ${isActive('/projects') ? 'text-interior-gold' : 'text-interior-charcoal'} py-2`} onClick={closeMenu}>
             Projects
-          </Link>
-          <Link to="/technology" className={`text-sm font-medium ${isActive('/technology') ? 'text-interior-gold' : 'text-interior-charcoal'} py-2`} onClick={closeMenu}>
-            Technology
-          </Link>
-          <Link to="/clientele" className={`text-sm font-medium ${isActive('/clientele') ? 'text-interior-gold' : 'text-interior-charcoal'} py-2`} onClick={closeMenu}>
-            Clientele
           </Link>
           <Link to="/contact" className={`text-sm font-medium ${isActive('/contact') ? 'text-interior-gold' : 'text-interior-charcoal'} py-2`} onClick={closeMenu}>
             Contact Us
