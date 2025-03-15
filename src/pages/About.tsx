@@ -21,13 +21,13 @@ const About = () => {
       </section>
       
       {/* Company Overview */}
-      <section className="section">
+      <section className="section py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                  src="https://res.cloudinary.com/ddoiavjyy/image/upload/v1742057138/WhatsApp_Image_2025-03-15_at_22.15.32_7275dd2b_ckgfse.jpg" 
                   alt="Our Company" 
                   className="rounded-md shadow-lg w-full h-auto object-cover"
                 />
@@ -38,18 +38,18 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-serif mb-4">Our Story</h2>
               <div className="w-16 h-1 bg-interior-gold mb-6"></div>
               <p className="text-muted-foreground mb-6">
-                Interior Vista Design was founded with a vision to transform ordinary spaces into extraordinary 
-                experiences. With a blend of artistic vision and technical expertise, we have established 
-                ourselves as a leading design and build company in the industry.
+                CONSTRO TECH SOLUTIONS specializes in the design, execution, and delivery of
+                various types of interior and exterior designs for residential and commercial buildings.
+                Additionally, we offer services for the Structural design, execution, and delivery of
+                residential and commercial projects.
               </p>
               <p className="text-muted-foreground mb-6">
-                Our journey began with a small team of passionate designers and has grown into a comprehensive 
-                design and build firm serving clients across residential, commercial, and hospitality sectors.
-              </p>
-              <p className="text-muted-foreground">
-                We believe that exceptional design should be accessible to all, and we work closely with our 
-                clients to understand their needs, preferences, and budget constraints to deliver tailored 
-                solutions that exceed expectations.
+                Constro Tech Solutions has a longstanding history of providing quality construction
+                and service, which is the result of hard work, attention to detail, and dedication to
+                serving the community. We are a conservative contracting firm that follows a strategy to
+                become not the largest general contractor but the best. At Constro Tech Solutions, we
+                treat our clients with respect, fulfill our promises, and deliver projects safely, on time,
+                and within budget.
               </p>
             </div>
           </div>
@@ -59,29 +59,57 @@ const About = () => {
       {/* Stats Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-md shadow-md text-center">
-              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">120+</div>
+              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">56+</div>
               <p className="text-muted-foreground">Projects Completed</p>
             </div>
             <div className="bg-white p-8 rounded-md shadow-md text-center">
-              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">15+</div>
+              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">5+</div>
               <p className="text-muted-foreground">Years Experience</p>
             </div>
             <div className="bg-white p-8 rounded-md shadow-md text-center">
-              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">80+</div>
+              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">50+</div>
               <p className="text-muted-foreground">Happy Clients</p>
             </div>
-            <div className="bg-white p-8 rounded-md shadow-md text-center">
-              <div className="text-4xl font-serif font-bold text-interior-charcoal mb-2">25+</div>
-              <p className="text-muted-foreground">Design Awards</p>
+          </div>
+        </div>
+      </section>
+      
+      {/* Vision and Mission */}
+      <section className="section py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="p-8 border border-gray-200 rounded-md hover:border-interior-gold transition-colors">
+              <h3 className="text-2xl font-serif mb-4">VISION</h3>
+              <div className="w-12 h-1 bg-interior-gold mb-6"></div>
+              <p className="text-muted-foreground">
+                Our vision is to build a reliable company for our valued clients and to distinguish our 
+                company through the delivery of high-quality products.
+              </p>
+            </div>
+            <div className="p-8 border border-gray-200 rounded-md hover:border-interior-gold transition-colors">
+              <h3 className="text-2xl font-serif mb-4">MISSION</h3>
+              <div className="w-12 h-1 bg-interior-gold mb-6"></div>
+              <p className="text-muted-foreground mb-4">
+                A dependable & reliable partner to all our clients.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Delivering a good quality of product within a timeline.
+              </p>
+              <p className="text-muted-foreground">
+                Our mission is dedicated serving our clients and community by delivering the best of 
+                value in service and innovative, efficient solutions. We are deeply committed to exceeding 
+                client expectations for quality, responsiveness, customer service, and professional excellence 
+                while delivering our projects on time and within agreed upon schedules and pricing.
+              </p>
             </div>
           </div>
         </div>
       </section>
       
       {/* Our Values */}
-      <section className="section">
+      <section className="section py-16">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-center">Our Values</h2>
           <p className="section-subtitle text-center mx-auto">
@@ -137,13 +165,12 @@ const About = () => {
             <p className="text-gray-300 mb-8">
               We'd love to hear from you. Reach out to discuss your project or inquire about our services.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex flex-col items-center">
                 <Phone size={24} className="text-interior-gold mb-4" />
                 <h3 className="text-xl font-serif mb-2">Phone</h3>
                 <p className="text-gray-300 text-sm">+91-9740112626</p>
                 <p className="text-gray-300 text-sm">+91-7975311636</p>
-                <p className="text-gray-300 text-sm">+91-8748925647</p>
               </div>
               <div className="flex flex-col items-center">
                 <Mail size={24} className="text-interior-gold mb-4" />

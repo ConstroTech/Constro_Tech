@@ -70,7 +70,7 @@ const Index = () => {
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl md:text-4xl font-serif mb-4">Crafting Exceptional Spaces</h2>
               <p className="text-muted-foreground mb-6">
-                Interior Vista Design is a premier design and build company specializing in creating 
+                Constro Tech Solution is a premier design and build company specializing in creating 
                 bespoke interior spaces that blend functionality with aesthetic excellence. Our team 
                 of experienced designers and craftsmen work collaboratively to bring your vision to life.
               </p>
