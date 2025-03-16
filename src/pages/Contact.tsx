@@ -1,3 +1,4 @@
+
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
@@ -89,8 +90,7 @@ const Contact = () => {
               </div>
               <h3 className="text-xl font-serif mb-4">Phone</h3>
               <p className="text-muted-foreground mb-2">+91-9740112626</p>
-              <p className="text-muted-foreground mb-2">+91-7975311636</p>
-              <p className="text-muted-foreground">+91-8748925647</p>
+              <p className="text-muted-foreground">+91-7975311636</p>
             </div>
             
             {/* Email */}
