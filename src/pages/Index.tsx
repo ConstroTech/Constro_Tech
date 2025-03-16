@@ -1,5 +1,5 @@
 
-import { Hammer, Paintbrush, Building, WandSparkles } from 'lucide-react';
+import { Hammer, Paintbrush, Building, WandSparkles, ArrowRight } from 'lucide-react';
 import HeroSection from '@/components/HeroSection';
 import ServiceCard from '@/components/ServiceCard';
 import Navbar from '@/components/Navbar';
@@ -89,8 +89,9 @@ const Index = () => {
                 </div>
               </div>
               <Link to="/about">
-                <Button className="btn-primary">
+                <Button className="group bg-interior-charcoal hover:bg-black text-white px-6 py-3 rounded-md text-sm uppercase tracking-wider font-medium transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg flex items-center">
                   Learn More About Us
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </Link>
             </div>
@@ -155,8 +156,9 @@ const Index = () => {
           
           <div className="text-center mt-12">
             <Link to="/projects">
-              <Button className="btn-primary">
+              <Button className="group bg-interior-gold hover:bg-interior-gold/90 text-interior-charcoal px-8 py-3 rounded-md text-sm uppercase tracking-wider font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center mx-auto">
                 View All Projects
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
@@ -164,15 +166,19 @@ const Index = () => {
       </section>
       
       {/* Call to Action */}
-      <section className="py-20 bg-interior-charcoal text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="py-20 bg-interior-charcoal text-white relative overflow-hidden">
+        {/* Decorative shape */}
+        <div className="absolute top-0 left-0 w-1/4 h-full bg-interior-gold/20 rounded-tr-[100px] backdrop-blur-sm transform -rotate-6 z-0 hidden lg:block"></div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-serif mb-4">Ready to Transform Your Space?</h2>
           <p className="text-gray-300 max-w-2xl mx-auto mb-8">
             Contact us today to discuss your project requirements and discover how we can bring your vision to life.
           </p>
           <Link to="/contact">
-            <Button className="py-3 px-8 bg-interior-gold text-interior-charcoal hover:bg-white transition-colors rounded-sm text-sm uppercase tracking-wider font-medium">
+            <Button className="group bg-interior-gold hover:bg-white transition-all duration-300 text-interior-charcoal hover:text-interior-charcoal px-8 py-3 rounded-md text-sm uppercase tracking-wider font-medium transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center mx-auto">
               Get in Touch
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>

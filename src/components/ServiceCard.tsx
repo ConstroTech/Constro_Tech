@@ -31,12 +31,12 @@ const ServiceCard = ({ title, description, icon, link, delay }: ServiceCardProps
       <div className="flex justify-center">
         <Link 
           to={link} 
-          className="flex items-center text-sm font-medium text-interior-gold hover:text-interior-charcoal transition-colors"
+          className="group flex items-center text-sm font-medium text-interior-gold hover:text-interior-charcoal transition-colors"
         >
           Learn More 
           <ArrowRight 
             size={16} 
-            className={`ml-1 transition-transform duration-300 ${isHovered ? 'transform translate-x-1' : ''}`} 
+            className="ml-1 transition-transform duration-300 group-hover:translate-x-2" 
           />
         </Link>
       </div>
