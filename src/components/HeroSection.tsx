@@ -31,9 +31,9 @@ const HeroSection = ({ title, subtitle, buttonText, buttonLink, backgroundImage 
         <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: '200ms' }}>
           {subtitle}
         </p>
-        <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
+        <div className="animate-fade-in flex justify-center" style={{ animationDelay: '400ms' }}>
           <Link to={buttonLink}>
-            <Button className="group bg-interior-gold hover:bg-interior-gold/90 text-interior-charcoal px-8 py-6 rounded-md text-sm uppercase tracking-wider font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center">
+            <Button className="group bg-gradient-to-r from-interior-gold to-interior-gold/90 hover:from-interior-gold/90 hover:to-interior-gold text-interior-charcoal px-8 py-6 rounded-[4px] text-sm uppercase tracking-wider font-medium transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center">
               {buttonText}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>

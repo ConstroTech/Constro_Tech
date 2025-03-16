@@ -135,6 +135,10 @@ export default {
 			fontFamily: {
 				'serif': ['Playfair Display', 'serif'],
 				'sans': ['Montserrat', 'sans-serif']
+			},
+			backgroundImage: {
+				'gradient-gold': 'linear-gradient(to right, #D4AF37, #FFF5B8, #D4AF37)',
+				'gradient-charcoal': 'linear-gradient(to right, #36454F, #506B7A, #36454F)'
 			}
 		}
 	},

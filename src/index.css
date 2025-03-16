@@ -54,7 +54,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-gradient-to-b from-background to-gray-50 text-foreground font-sans min-h-screen;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -64,7 +64,7 @@
 
 @layer components {
   .service-card {
-    @apply p-6 rounded-md bg-white shadow-md transition-all duration-300 hover:shadow-xl border border-muted;
+    @apply p-6 rounded-[4px] bg-white shadow-md transition-all duration-300 hover:shadow-xl border border-muted;
   }
   
   .service-card:hover {
@@ -84,11 +84,11 @@
   }
 
   .btn-primary {
-    @apply py-3 px-6 bg-interior-charcoal text-white rounded-sm transition-all duration-300 hover:bg-black hover:shadow-md text-sm uppercase tracking-wider font-medium;
+    @apply py-3 px-6 bg-gradient-to-r from-interior-charcoal to-interior-charcoal/90 text-white rounded-[4px] transition-all duration-300 hover:from-interior-charcoal/90 hover:to-interior-charcoal hover:shadow-md text-sm uppercase tracking-wider font-medium;
   }
   
   .section {
-    @apply py-16;
+    @apply py-16 bg-gradient-to-b from-white to-gray-50;
   }
   
   .section-title {

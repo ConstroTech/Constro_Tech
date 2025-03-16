@@ -16,13 +16,13 @@ const ServiceCard = ({ title, description, icon, link, delay }: ServiceCardProps
 
   return (
     <div 
-      className={`service-card animate-fade-in transform transition-all duration-300 ${isHovered ? 'scale-105 shadow-xl' : ''}`}
-      style={{ animationDelay: `${delay}ms` }}
+      className={`service-card animate-fade-in transform transition-all duration-300 ${isHovered ? 'scale-105 shadow-xl' : ''} bg-gradient-to-b from-white to-gray-50`}
+      style={{ animationDelay: `${delay}ms`, borderRadius: '8px 8px 2px 2px' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={`mb-6 text-center transition-all duration-300 transform ${isHovered ? 'scale-110' : ''}`}>
-        <div className="p-4 inline-flex items-center justify-center rounded-full bg-interior-gold/10 text-interior-gold">
+        <div className="p-4 inline-flex items-center justify-center rounded-[4px] bg-gradient-to-r from-interior-gold/20 to-interior-gold/10 text-interior-gold">
           {icon}
         </div>
       </div>
@@ -31,12 +31,12 @@ const ServiceCard = ({ title, description, icon, link, delay }: ServiceCardProps
       <div className="flex justify-center">
         <Link 
           to={link} 
-          className="group flex items-center text-sm font-medium text-interior-gold hover:text-interior-charcoal transition-colors"
+          className="group flex items-center text-sm font-medium bg-gradient-to-r from-interior-gold to-interior-charcoal bg-clip-text text-transparent hover:from-interior-charcoal hover:to-interior-gold transition-all duration-300"
         >
           Learn More 
           <ArrowRight 
             size={16} 
-            className="ml-1 transition-transform duration-300 group-hover:translate-x-2" 
+            className="ml-1 transition-transform duration-300 group-hover:translate-x-2 text-interior-gold group-hover:text-interior-charcoal" 
           />
         </Link>
       </div>
